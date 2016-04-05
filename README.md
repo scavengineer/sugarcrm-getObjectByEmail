@@ -21,11 +21,11 @@ Called like this:
     //get session id
     $session_id = $login_result->id;
 
-$Contacts = GetObjectByEmail( $session_id, $url, 'Leads', 'scavengineer@gmail.com');
-$results = $Contacts[0]["result_count"];
-print "Returned $results leads\n";
-if ( $results > 0 )
- var_dump($Contacts);
+    $Contacts = GetObjectByEmail( $session_id, $url, 'Leads', 'scavengineer@gmail.com');
+    $results = $Contacts[0]["result_count"];
+    print "Returned $results leads\n";
+    if ( $results > 0 )
+    var_dump($Contacts);
  
  
  This works for Contacts, Leads, Users or any other "person" type object.
